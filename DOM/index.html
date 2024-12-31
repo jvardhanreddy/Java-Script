@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Welcome to codehelp1</h1>
+
+    <h2 class="code1">codehelp1</h2>
+    <h2 class="code1">codehelp2</h2>
+    <h2 class="code2">codehelp3</h2>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+    <p>paragraph3</p>
+    <div class="welcome">Hello</div>
+    <div class="welcome">World</div>
+    <script>
+        let element = document.getElementById("title");
+        element.style.backgroundColor="red";
+        let elements1 = document.getElementsByClassName("code1");
+        elements1[0].style.backgroundColor="yellow";
+        let elements2 = document.getElementsByTagName('p');
+        elements2[1].style.backgroundColor="lightgreen";
+
+        let element3 = document.querySelector(".welcome");
+        element3.style.backgroundColor="blue";
+        let element4 = document.querySelectorAll(".welcome");
+        element4[1].style.backgroundColor="red";
+    </script>
+</body>
+</html>
